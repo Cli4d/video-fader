@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
+    <title>Fadeout Video on scroll</title>
+</head>
+<body>
+    <section>
+        <video src="./video/video4.mp4" autoplay="" muted="" loop="" ></video>
+    </section>
+      <section>
+         <div class="content">
+             <h2>Fadeout Video on scroll</h2>
+             <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit nesciunt vitae omnis, quod maxime eius minus quis. Deserunt nemo accusamus eos inventore pariatur tenetur minus maiores vitae a, architecto quam consectetur quibusdam corporis quis! Optio dolorum eum impedit delectus, tempora ducimus aut unde quisquam commodi, harum voluptates vero alias hic ullam mollitia numquam saepe porro. Tempora explicabo laboriosam consectetur?<br> 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, placeat nulla, molestiae porro soluta ullam repellendus doloremque, eaque distinctio rerum. Et voluptas autem optio veritatis nemo, reiciendis eos mollitia? <br> 
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat accusantium, molestias voluptate cupiditate eius delectus quos veritatis iste quod unde at blanditiis debitis quisquam! Odio incidunt suscipit necessitatibus ex reiciendis delectus earum a aperiam enim, cumque quibusdam, facilis praesentium vel. <br>
+                 <br><br><br>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iste ex obcaecati dignissimos voluptatibus? Molestiae aliquam reprehenderit totam necessitatibus at eum est aut, sapiente omnis perferendis quidem tenetur fuga, illo sunt hic veniam ea praesentium provident voluptas. Veniam, reprehenderit. Eos voluptate laudantium et soluta, quidem aut dicta aperiam molestias nemo deserunt repudiandae adipisci nisi eum tempore minima id cupiditate maxime? <br> 
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore deserunt ipsa. Nisi, pariatur culpa? Odio molestias placeat impedit aut, vero ducimus aspernatur molestiae magnam nam nesciunt iusto tenetur. Placeat quas vero exercitationem excepturi minima nostrum quam sunt. Eum ab voluptatem dolorum modi deleniti maxime perferendis, culpa magni corporis hic dolor officia ad rem tenetur sit temporibus praesentium nostrum soluta, voluptatibus fugit optio debitis rerum labore! Dolorem, consequatur. Expedita laboriosam ut deleniti dolorem tempore incidunt voluptate aut eveniet.
+             </p>
+         </div>
+      </section>
+      <script>
+          let video = document.querySelector('video');
+          window.addEventListener('scroll',function(){
+          let value = 1 + window.scrollY/-600;
+          video.style.opacity = value;
+          })
+      </script>
+</body>
+</html>
